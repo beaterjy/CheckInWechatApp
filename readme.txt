@@ -1,2 +1,2 @@
-SignInSystem   Ç©µ½Ğ¡³ÌĞò
-test           ºóÌ¨
+SignInSystem   å¾®ä¿¡å°ç¨‹åº
+test           åå°
