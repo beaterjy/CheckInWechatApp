@@ -1,0 +1,13 @@
+<view class="myCourse">
+   <view class="title">
+         <text>我的课程</text>
+  </view>
+      <scroll-view class="showCourse" scroll-y style="height: 85%">
+             <view class="course" bindtap="change" id="{{item.id}}" wx:key="name" wx:for="{{courseList}}">
+                <text class="name">{{item.name}}</text>
+                <text class="address">地点：{{item.detail["0"].classroom}}(第{{item.week_begin}} - {{item.week_end}}周)</text>
+                <text class="time">时间：星期{{weekNumber[item.detail["0"].day]}}第{{item.detail["0"].class_time}},{{item.detail["0"].class_time + 1}}节</text>
+             </view>
+  
+       </scroll-view>
+</view>

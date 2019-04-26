@@ -1,0 +1,37 @@
+.myCourse{
+  background-color: rgb(57, 125, 230);
+  height: 100%
+}
+.title{
+  position: relative;
+  top:60rpx;
+  height: 180rpx;
+  text-align: center;
+  font-size: 60rpx;
+}
+.course{
+  display: flex;
+  flex-direction: column;
+  padding: 30rpx 0 5rpx 40rpx;
+  border-bottom: 8rpx solid gray;
+  background-color: lightgrey;
+  height: 185rpx;
+}
+
+.showCourse{
+  display: flex;
+  flex-direction:column;
+}
+.name{
+  font-size: 50rpx;
+}
+
+.address{
+  margin: 10rpx;
+  font-size: 30rpx;
+}
+
+.time{
+  margin: 10rpx;
+  font-size: 30rpx;
+}

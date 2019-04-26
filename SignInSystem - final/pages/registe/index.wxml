@@ -1,0 +1,31 @@
+<view class="login">
+
+  
+    <image mode="aspectFill" class="logo" src="../image/logo.jpg"></image>
+  
+  <view class="information">
+    <form class="form" bindsubmit="formSubmit">
+      <!--<text class="number" >学号/工号</text>-->
+      <input type="text" confirm-type="done" name="id" id="id" focus="true" placeholder="学号/工号" />
+      <!--<text class="name">名字</text>-->
+      <input type="text" confirm-type="done" name="name" id="name" placeholder="名字" />
+      <radio-group name="radioGroup" class="radio" bindchange="radioChanged">
+        <radio class="student" value="student" checked="{{true}}">学生</radio>
+        <radio class="teacher" value="teacher" checked="{{false}}">教师</radio>
+      </radio-group>
+      <button class="button" type="primary" form-type="submit">提交</button>
+    </form>
+  </view>
+  <navigator url="../help/index">
+    <view>
+      <text class="help">帮助</text>
+      <!--<text>{{testRole}}</text>
+      <text>{{testUser_id}}</text>
+      <text>{{testUser_name}}</text>
+      <text>{{testVerify}}</text>
+      <text>{{testCode}}</text>-->
+    </view>
+  </navigator>
+  <image class="beijing" src="../image/beijing.jpg"></image>
+  <!--<image  class="icon"  src="../image/menu.png"></image> -->
+</view>

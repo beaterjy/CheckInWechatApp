@@ -1,0 +1,111 @@
+.login {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /*background-image: "../image/beijing.jpg";*/
+  height: 100%;
+}
+
+/*.icon{
+  position: absolute;
+  width: 68rpx;
+  height: 38rpx;
+  left: 20rpx;
+  top: 20rpx;
+}*/
+
+/*.registe{
+  position: absolute;
+  width: 80rpx;
+  height: 38rpx;
+  left: 85%;
+  top:20rpx;
+  font-weight: 800;
+}*/
+
+.beijing {
+  width: 375px;
+  height: 603px;
+}
+
+.logo {
+  border-radius: 50px;
+  position: absolute;
+  top: 170rpx;
+  width: 100px;
+  height: 100px;
+
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 270rpx;
+}
+
+.information {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 300rpx;
+  position: absolute;
+  top: 550rpx;
+  left: 200rpx;
+}
+
+.form {
+  height: 200px;
+  position: relative;
+  top: -20px;
+  left: 6px;
+}
+
+#id {
+  /*text-align: center;*/
+  width: 350rpx;
+  position: relative;
+  border-bottom: 1px solid gray;
+  top: -30rpx;
+}
+
+/*键盘输入空行样式*/
+
+#name {
+  width: 350rpx;
+  position: relative;
+  /*text-align: center;*/
+  border-bottom: 1px solid gray;
+  top: 10rpx;
+}
+
+.radio {
+  position: relative;
+  top: 50rpx;
+}
+
+.student {
+}
+
+.teacher {
+  position: relative;
+  left: 20px;
+}
+
+.button {
+  width: 100px;
+  position: relative;
+  top: 100rpx;
+  left: -20rpx;
+}
+
+.help {
+  position: absolute;
+  top: 90%;
+  left: 80%;
+  width: 60rpx;
+  height: 20rpx;
+  color: blue;
+  font-size: 27rpx;
+  font-weight: 800;
+}

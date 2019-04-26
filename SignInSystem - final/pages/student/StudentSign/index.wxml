@@ -1,0 +1,7 @@
+<view class="sign">
+    <view  class="mapView">
+        <button class="showLocation" bindtap="getLocation">查看当前位置</button>
+        <text class="information">{{courseInformation}}</text>
+        <button type="primary" disabled="true" class="btnSign" bindtap="sign">签到</button>
+    </view>
+</view>

@@ -1,0 +1,21 @@
+<view class="mapView" style="background: {{color}}">
+
+  <map class="map" scale="28" latitude="{{latitude}}" markers="{{map_center}}" circles="{{circles}}" longitude="{{longitude}}" />
+
+</view>
+<view wx:if="{{signing == false}}">
+  <picker-view class="pickerView" indicator-style="height: 50px;" style="width: 100%; height: 150px;" value="{{value}}" bindchange="bindChange">
+    <picker-view-column>
+      <view wx:key="id" wx:for="{{teacherClasses}}" style="line-height: 50px">{{item}}</view>
+    </picker-view-column>
+  </picker-view>
+  <view>
+    <button class="btnView" type="primary" bindtap="clickBtn">开启签到</button>
+  </view>
+</view>
+<view wx:if="{{signing == true}}" class="theChosedCourse">
+  <text class="theChosedCourseTitle">{{s}}</text>
+  <view>
+    <button class="disbtnView" type="primary" bindtap="clickBtn" disabled="true">开启签到</button>
+  </view>
+</view>

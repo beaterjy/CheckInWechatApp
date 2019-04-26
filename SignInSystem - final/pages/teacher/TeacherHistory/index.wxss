@@ -1,0 +1,88 @@
+/**index.wxss**/
+
+.whole {
+  display: flex;
+  flex-direction: column;
+}
+
+.CourseTitle {
+  text-align: center;
+  font: bold 60rpx helvetica, arial, sans-serif;
+  /*border-bottom:  1px solid black;*/
+}
+
+.CourseDetil {
+  font-size: 30rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: gray;
+}
+
+.SignInTime {
+  margin-top: 10rpx;
+  font-size: 30rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: gray;
+}
+
+.Sign {
+  margin-top: 50rpx;
+  border-top: 5px solid gray;
+}
+
+.SignPeople {
+  display: flex;
+  flex-direction: column;
+}
+
+.UnSign {
+  margin-top: 50rpx;
+  border-top: 5px solid gray;
+}
+
+.UnSignPeople {
+  font-size: 35rpx; 
+}
+
+.SignView {
+  height: 250px;
+}
+
+.UnSignVIew {
+  height: 180px;
+}
+
+.signScrollY {
+  height: 200px;
+}
+
+.unSignScrollY {
+  height: 40px;
+}
+
+.wx-view_gviFUd{
+  position: relative;
+  top: 220rpx;
+  height:  60%; 
+  display:  flex; 
+  flex-direction:  column; 
+  justify-content: center; 
+}
+.wx-icon_pTPKAt{
+  
+  display:  flex; flex-direction:  row; justify-content: center; 
+}
+.wx-text_xLckqt{
+  display:  flex; 
+  justify-content:center; 
+  font-family:  tahoma; 
+  font-weight:  900; 
+  font-size:  26px; 
+  text-align:  center; 
+  font-style: normal; 
+  margin: 50rpx;
+}
+

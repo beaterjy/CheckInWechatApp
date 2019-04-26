@@ -1,0 +1,78 @@
+<view class="page">
+  <view class="page-bottom">
+
+    <view class="page-content">
+      <image class="picture" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <view class="number">
+        <text class="studentID">{{studentID}}</text>
+      </view>
+
+      <view class="wc1">
+        <text class="first">签到</text>
+      </view>
+
+      <navigator open-type="redirectTo" url="../StudentCourse/index">
+        <view class="wc">
+          <text>课程信息</text>
+        </view>
+      </navigator>
+
+      <navigator open-type="redirectTo" url="../StudentHistory/index">
+        <view class="wc">
+          <text>历史记录</text>
+
+        </view>
+      </navigator>
+
+    </view>
+  </view>
+  <view class="page-top" bindtouchend="tap_end" bindtouchstart="tap_start" bindtouchmove="tap_drag" style="{{translate}}">
+    <image class="leftTopIcon" bindtap="tap_ch" src="../../image/menu.png"></image>
+
+    <!--<scroll-view scroll-y style="height: 200px">-->
+    <view class="showCourse">
+      <view class="title">
+        <text>今日课程</text>
+      </view>
+
+      <view wx:if="{{isEmpty == false}}">
+        <!--<view  bindtap="change" wx:if="{{signCourse == item.title}}" class="signCourse" id="{{item.id}}" wx:key="title" wx:for="{{courseList}}">
+        <text class="information">{{item.title}}</text>
+        <image class="icon" src="../../image/menu.png"></image>
+      </view>
+      <view wx:if="{{signCourse != item.title}}" class="course" id="{{item.id}}" wx:key="title" wx:for="{{courseList}}">
+        <text class="information">{{item.title}}</text>
+      </view>-->
+        <view class="lesson">
+          <text class="name">{{course_title}}</text>
+          <!--<text class="teacher">任课老师：{{course.teach_name}}</text>-->
+          <text class="address">教室：{{classroom}}</text>
+          <text class="time">上课时间：{{class_time}},{{class_time + 1}}</text>
+        </view>
+        <view class="mapView">
+          <view class="showLocation" bindtap="getLocation">
+             <text class="cheackTital">查看当前位置</text>
+          </view>
+        </view>
+        <view class="classname" wx:if="{{!isSigned}}">
+          <button bindtap="clickSignBtn" class="button1" type="primary" form-type="submit">签到</button>
+        </view>
+
+        <view class="classname" wx:if="{{isSigned}}">
+          <button class="button2" type="default" disabled="true" form-type="submit">签到</button>
+        </view>
+
+      </view>
+
+      <view wx:if="{{isEmpty == true}}">
+        <view class="c-minheight wx-view_gviFUd" data-c_e_id="wx_view_37e761a1">
+          <icon class="wx-icon_pTPKAt" data-c_e_id="wx_icon_d93a59d1" size="150" type="info" />
+          <text class="c-block wx-text_xLckqt" data-c_e_id="wx_text_14405891">@当前时段没有课程</text>
+        </view>
+      </view>
+
+    </view>
+    <!--</scroll-view>-->
+
+  </view>
+</view>

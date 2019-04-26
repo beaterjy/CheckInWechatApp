@@ -1,0 +1,26 @@
+.mapView{
+  height: 700rpx;
+  width: 100%;
+}
+
+
+.showLocation{
+  padding: 40rpx 0 20rpx 0;
+}
+
+.information{
+  position: absolute;
+  top:180rpx;
+  text-align: center;
+  width: 100%;
+  padding: 40rpx 0 20rpx 0;
+  border-bottom: 4rpx solid gray;
+}
+
+.btnSign{
+  position: absolute;
+  top:350rpx;
+  left: 35%;
+  width:200rpx;
+
+}

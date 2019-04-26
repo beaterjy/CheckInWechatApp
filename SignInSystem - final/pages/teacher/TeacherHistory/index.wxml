@@ -1,0 +1,58 @@
+<!--<view class="classname" wx:key="name" wx:for="{{courseList}}">
+  <text wx:if="{{courseInformation==item.name}}" >{{item.name}}</text>
+   <text wx:if="{{courseInformation==item.name}}">{{item.address}}</text>
+    <text wx:if="{{courseInformation==item.name}}">{{item.time}}</text>
+
+</view>
+-->
+
+<!--index.wxml-->
+<view wx:if="{{courseInformation != null}}" class="whole">
+  <view class="classname" wx:if="{{courseInformation==item.name}}" wx:key="name" wx:for="{{courseList}}">
+    <view class="CourseTitle">
+      <text>{{item.name}}</text>
+    </view>
+    <view class="CourseDetil">
+      <text>时间：星期{{weekNumber[item.detail["0"].day]}}第{{item.detail["0"].class_time}},{{item.detail["0"].class_time + 1}}节</text>
+      <text>地点：{{item.detail["0"].classroom}}</text>
+      <text>总人数:{{item.student_amount}}</text>
+    </view>
+  </view>
+
+  <view class="SignInTime">
+    <text>签到开启时间:{{startTime}}</text>
+    <text>持续时间:100分钟</text>
+  </view>
+
+  <view class="SignView">
+    <view class="Sign">
+      <text>已签到：{{stu_signed.length}}人</text>
+    </view>
+    <scroll-view class="signScrollY" scroll-y="true" wx:key="name" wx:for="{{stu_signed}}" >
+
+      <view class="SignPeople">
+       <text>{{item.grade}}{{item.major}}{{item.class_num}}班 {{item.id}} {{item.name}}</text>
+      </view>
+      
+    </scroll-view>
+  </view>
+
+  <view class="UnSignVIew">
+    <view class="UnSign">
+      <text>未签到：{{stu_unsign.length}}人</text>
+    </view>
+
+    <scroll-view class="unSignScrollY" scroll-y="true"  wx:key="name" wx:for="{{stu_unsign}}">
+    <view >
+      <text class="UnSignPeople">{{item.grade}}{{item.major}}{{item.class_num}}班 {{item.id}} {{item.name}}</text>
+    </view>
+    </scroll-view>
+  </view>
+
+</view>
+
+<view wx:if="{{courseInformation == null}}" class="c-minheight wx-view_gviFUd" data-c_e_id="wx_view_37e761a1">
+    <icon class="wx-icon_pTPKAt" data-c_e_id="wx_icon_d93a59d1" size="150" type="info" />
+    <text class="c-block wx-text_xLckqt" data-c_e_id="wx_text_14405891">@当前没有课程在签到\n请先选择课程开启签到</text>
+    
+</view>

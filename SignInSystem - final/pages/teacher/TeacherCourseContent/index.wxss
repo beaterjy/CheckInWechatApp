@@ -1,0 +1,72 @@
+.content{
+  display: flex;
+  flex-direction: column;
+  
+}
+.CourseTitle{
+  text-align: center;
+  font-size: 60rpx;
+  /*border-bottom:  1px solid black;*/
+}
+.CourseDetil{
+  font-size: 30rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: gray;
+  margin: 10rpx;
+}
+.signPeople{
+   text-align: center;
+   padding: 0 0 40rpx 0;
+}
+/*.signTime{
+  text-align: center;
+  font-size: 45rpx;
+  margin: 20rpx;
+}*/
+.pickerView{
+  text-align: center;
+}
+.unSigners{
+margin: 5rpx;
+}
+.wx-view_gviFUd{
+  position: relative;
+  top: 220rpx;
+  height:  60%; 
+  display:  flex; 
+  flex-direction:  column; 
+  justify-content: center; 
+}
+.wx-icon_pTPKAt{
+  
+  display:  flex; flex-direction:  row; justify-content: center; 
+}
+.wx-text_xLckqt{
+  display:  flex; 
+  justify-content:center; 
+  font-family:  tahoma; 
+  font-weight:  900; 
+  font-size:  26px; 
+  text-align:  center; 
+  font-style: normal; 
+  margin: 50rpx;
+}
+.unsigntitle{
+  font-size: 50rpx;
+}
+.unSigners{
+  margin: 15rpx;
+}
+.unsigndetailou{
+  background-color: lightgrey;
+  font-size: 34rpx;
+  border-bottom: 2rpx solid gray;
+}
+.unsigndetailji{
+  font-size: 34rpx;
+  border-bottom: 2rpx solid gray;
+}
+
+

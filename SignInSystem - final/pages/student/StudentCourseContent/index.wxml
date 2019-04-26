@@ -1,0 +1,24 @@
+<view>
+  <view class="course">
+    <text class="title">{{courseList[myindex].name}}</text>
+    <view class="addressAndTime">
+      <text class="time">时间：星期{{weekNumber[courseList[myindex].detail["0"].day]}}第{{courseList[myindex].detail["0"].class_time}},{{courseList[myindex].detail["0"].class_time + 1}}节</text>
+      <text class="address">地点：{{courseList[myindex].detail["0"].classroom}}</text>
+    </view>
+  </view>
+
+  
+
+  <view wx:if="{{signinopens.length!=0 && flag}}" class="record" wx:key="id" wx:for="{{signinopens}}"  wx:for-item="i" >
+       <view >
+          <text class="theRecord">第{{i}}周开启了签到</text>
+          
+          <icon class="theIcon" wx:if="{{i==myList[index]}}" type="success" size="23"></icon>
+          <icon class="theIcon" wx:if="{{i!=myList[index]}}" type="cancel"  size="23"></icon>
+       </view>
+  </view>
+  <view wx:if="{{signinopens.length==0 &&flag}}" class="c-minheight wx-view_gviFUd" data-c_e_id="wx_view_37e761a1">
+    <icon class="wx-icon_pTPKAt" data-c_e_id="wx_icon_d93a59d1" size="150" type="info" />
+    <text class="c-block wx-text_xLckqt" data-c_e_id="wx_text_14405891">@本节课还没有签到记录</text>
+  </view>
+</view>

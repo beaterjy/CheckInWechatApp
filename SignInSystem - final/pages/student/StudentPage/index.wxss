@@ -1,0 +1,210 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+page,.page {
+  height: 100%;
+  font-family: 'PingFang SC', 'Helvetica Neue', Helvetica, 'Droid Sans Fallback', 'Microsoft Yahei', sans-serif;
+}
+.page-bottom{
+  height: 100%;
+  width: 750rpx;
+  position: fixed; 
+  background-color: rgb(0, 68, 97);
+  z-index: 0;
+}
+.wc{
+  flex-direction: row;
+  position: relative;
+  left:60rpx;
+  color: white;
+  padding: 30rpx 0 30rpx 40rpx;
+}
+.page-content{
+  padding-top: 300rpx;
+}
+.page-top{
+  height: 100%;
+  position: fixed;
+  width: 750rpx;
+  background-color: rgb(57, 125, 230);
+  /*background-color: rgb(255,250,240);*/
+  /*米黄色*/
+  z-index: 0;
+  transition: All 0.4s ease; 
+  -webkit-transition: All 0.4s ease;
+}
+.leftTopIcon{
+  position: absolute;
+  width: 68rpx;
+  height: 38rpx;
+  left: 20rpx;
+  top: 20rpx;
+}
+/*.c-state1{
+  transform: rotate(0deg) scale(1) translate(75%,0%); 
+  -webkit-transform: rotate(0deg) scale(1) translate(75%,0%); 
+}
+.c-state2{
+  transform: rotate(0deg) scale(.8) translate(75%,0%); 
+  -webkit-transform: rotate(0deg) scale(.8) translate(75%,0%); 
+}*/
+
+.picture{
+  border-radius: 10px;
+  position: absolute;
+  left:140rpx;
+  top:50rpx;
+  height: 200rpx;
+  width: 200rpx;
+}
+
+.studentID{
+ font-size: 30rpx;
+ position: relative;
+ left:147rpx;
+ top:-15rpx;
+}
+
+/*.Icon{
+  position: absolute;
+  left: 370rpx;
+  top:40rpx;
+  height: 21px;
+  width: 15px;
+}*/
+
+.wc1{
+  background-color: rgb(57, 125, 230);
+  width: 450rpx;
+  padding: 30rpx 0 30rpx 40rpx;
+  /*background-color: rgb(0, 70, 97);
+  opacity:0.5;filter:alpha(opacity=50);
+  box-shadow: inset 0px 1rpx 4rpx 1rpx #000000;
+  border: 1rpx #666 solid;
+  border-left: 1rpx #131313 solid;
+  border-top: 1rpx #131313 solid;*/
+}
+
+.first{
+  position: relative;
+  left: 60rpx;
+  color: white;
+}
+
+.showCourse{
+  display: flex;
+  flex-direction:column;
+  position: absolute;
+  top:75rpx;
+  width: 100%;
+  height: 100%;
+}
+.title{
+  height: 150rpx;
+  text-align: center;
+  font-size: 60rpx;
+}
+.signCourse{
+  display: flex;
+  flex-direction: row;
+  padding: 40rpx 0 10rpx 50rpx;
+  border-bottom: 8rpx solid gray;
+  background-color: lightgrey;
+  height: 90rpx;
+}
+.course{
+  display: flex;
+  flex-direction: row;
+  padding: 40rpx 0 10rpx 50rpx;
+  border-bottom: 8rpx solid gray;
+  background-color: lightgrey;
+  height: 90rpx;
+  opacity:0.5;
+  /*filter:alpha(opacity=80);*/
+}
+
+.information{
+  width: 600rpx;
+}
+.icon{
+  position: relative;
+  left: 20rpx;
+  width: 50px;
+  height: 90rpx;
+  
+}
+.wx-view_gviFUd{
+  height:  60%; display:  flex; flex-direction:  column; justify-content: center; 
+}
+.wx-icon_pTPKAt{
+  display:  flex; flex-direction:  row; justify-content: center; 
+}
+.wx-text_xLckqt{
+  display:  flex; 
+  justify-content:center; 
+  font-family:  tahoma; 
+  font-weight:  900; 
+  font-size:  26px; 
+  text-align:  center; 
+  font-style: normal; 
+  margin: 50rpx;
+}
+.lesson{
+  display: flex;
+  flex-direction: column;
+  padding: 30rpx 0 5rpx 40rpx;
+  border-bottom: 8rpx solid gray;
+  background-color: lightgrey;
+  height: 250rpx;
+}
+.name{
+  font-size: 50rpx;
+}
+
+.address{
+  margin: 10rpx;
+  font-size: 30rpx;
+}
+.teacher{
+  margin: 10rpx;
+  font-size: 30rpx;
+}
+.time{
+  margin: 10rpx;
+  font-size: 30rpx;
+}
+.button1{
+  position: relative;
+  top:250rpx;
+  width: 300rpx;
+}
+.button2{
+  position: relative;
+  top:250rpx;
+  width: 300rpx;  
+}
+.isu{
+  font-size: 50rpx;
+  text-align: center;
+}
+.showLocation{
+  background-color: rgb(157, 200, 200);
+  padding: 20rpx 0 10rpx 0;
+  text-align: center;
+  height: 80rpx;
+}
+.cheackTital{
+  font-size: 45rpx;
+}
+.mapView{
+  height: 100rpx;
+  width: 100%;
+}

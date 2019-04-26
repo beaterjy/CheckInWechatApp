@@ -1,0 +1,27 @@
+/* pages/teacher/index.wxss */
+.helptext{
+ text-align: left;
+ font-size: 24px;
+ font-family: Arial, Helvetica, sans-serif;
+ font-weight: bold;
+ color: firebrick;
+ padding: 24px;
+ margin: 8px;
+ /*background: #CCC;*/
+
+ text-shadow: -1px -1px white,1px 1px #333;
+ /*text-shadow: -1px 0 black,
+              0 1px black,
+              1px 0 black,
+              0 -1px black;镂空*/
+ /*text-shadow:0 0 4px white,
+             0 -5px 4px #ff3,
+             2px -10px 6px #fd3,
+             -2px -15px 11px #f80,
+             2px -25px 18px #f20;燃烧*/
+ /*padding: 24px;*/
+}
+
+.e-mail{
+  border-bottom: 2px solid gray;
+}

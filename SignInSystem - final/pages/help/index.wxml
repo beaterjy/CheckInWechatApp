@@ -1,0 +1,15 @@
+
+<!--<view class="helptext">
+•若学生注册失败：该账号对应学生未选择任何课程，可以联系你的课程老师。
+</view>
+
+<view class="helptext">
+•若老师注册失败：可以发送邮件至chuchilok@126.com联系我们工作小组。
+</view>-->
+<view class="helptext">
+•若学生注册失败：该账号对应学生未选择任何课程，可以联系你的课程老师。
+</view>
+
+<view class="helptext">
+•若老师注册失败：可发送姓名、工号和所在学院邮件至 <text class="e-mail">chuchilok@126.com</text> 联系我们工作小组。
+</view>

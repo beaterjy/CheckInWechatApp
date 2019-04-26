@@ -1,0 +1,9 @@
+<view class="container">
+  <form bindsubmit="btn_submit">
+    <view class="form_view">
+      <text>input put your password</text>
+      <view class="passwd_input"><input type="password" id="passwd" name="passwd" focus="true" /></view>
+      <button form-type="submit">Submit</button>
+    </view>
+  </form>
+</view>

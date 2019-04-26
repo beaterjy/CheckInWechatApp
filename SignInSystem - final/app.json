@@ -1,0 +1,50 @@
+{
+  "pages":[
+    "pages/registe/index",
+    "pages/index/index",
+    "pages/auth/auth",
+    "pages/logs/logs",
+    "pages/student/StudentPage/index",
+    "pages/student/StudentSign/index",
+    "pages/student/StudentCourse/index",
+    "pages/student/StudentHistory/index",
+    "pages/student/StudentCourseContent/index",
+    "pages/teacher/TeacherPage/index",
+    "pages/teacher/TeacherCourse/index",
+    "pages/teacher/TeacherCourseContent/index",
+    "pages/teacher/TeacherHistory/index",
+    "pages/help/index"
+  ],
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/teacher/TeacherCourse/index",
+        "iconPath": "pages/image/wechat.png",
+        "selectedIconPath": "pages/image/wechatHL.png",
+        "text": "课程"
+      },
+      {
+        "pagePath": "pages/teacher/TeacherPage/index",
+        "iconPath": "pages/image/locate.png",
+        "selectedIconPath": "pages/image/locateHL.png",
+        "text": "定位"
+      },
+      {
+        "pagePath": "pages/teacher/TeacherHistory/index",
+        "iconPath": "pages/image/wechat.png",
+        "selectedIconPath": "pages/image/wechat.png",
+        "text": "签到情况"
+      }
+    ]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "签到",
+    "navigationBarTextStyle":"black"
+  }
+}
